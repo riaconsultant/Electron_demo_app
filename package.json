@@ -1,0 +1,22 @@
+{
+  "name": "ele_demo",
+  "productName": "Menu demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "dependencies": {
+    "electron-prebuilt": "^1.4.13"
+  },
+  "devDependencies": {
+    "electron": "^2.0.2",
+    "electron-packager": "^12.1.0",
+    "rimraf": "^2.6.2"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "rimraf ele_demo-* && electron-packager . --platform=darwin,win32,linux --arch=x64 --icon=src/app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
